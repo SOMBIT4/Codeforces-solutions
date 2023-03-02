@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 int main ()
 {
     char s[100][101];
@@ -10,7 +9,7 @@ int main ()
           t=0;
         scanf("%s",s[i]);
         for(j=0;j<i;j++){
-            if(strcmp(s[i],s[j])==0){
+            if(s[i]==s[j]){
                 t=1;
                 break;
             }
